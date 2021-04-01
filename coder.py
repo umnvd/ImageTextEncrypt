@@ -86,7 +86,7 @@ def decode(file_name, key):
 
     decoded_text = ''.join(map(bin_to_char, decoded_text_bin_data))
 
-    file_out = open(file_name[0:-12] + '_decoded.txt', 'wt', encoding='utf-8')
+    file_out = open(file_name[0:-4] + '_decoded.txt', 'wt', encoding='utf-8')
     file_out.write(decoded_text)
     file_out.close()
 
